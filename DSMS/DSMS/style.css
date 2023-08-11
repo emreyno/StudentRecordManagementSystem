@@ -1,0 +1,1094 @@
+/*
+Project Name: Digital Student Database
+Version: 1.0
+
+Content:
+Body
+Hero Size
+Header
+Navbar
+DropDown
+Content
+Requirement Table
+
+
+font-family
+
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Serif Pro', serif;
+
+*/
+
+/*
+=====================================================
+                1. Body
+=====================================================
+*/
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Welcome;
+    src: url("simpletix 400.otf") format("opentype");
+    }
+
+.custom-body{
+    font-family: Welcome, Helvetica, sans-serif;
+    /* background-color: #282868;
+    background-image:  linear-gradient(#191d66 1px, transparent 1px), linear-gradient(to right, #191d66 1px, #090945 1px); */
+
+    /* background-color: #191d66;
+    background-image:  radial-gradient(#c2c4e5 1px, transparent 1px), radial-gradient(#c2c4e5 1px, #191d66 1px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px; */
+
+    /* background-color: #fefdf8;
+    opacity: 1;
+    background-image:  linear-gradient(#d3d4e4 0.6000000000000001px, transparent 0.6000000000000001px), linear-gradient(to right, #d3d4e4 0.6000000000000001px, #fefdf8 0.6000000000000001px);
+    background-size: 12px 12px; */
+
+    /* background-color: #ffffff;
+opacity: 1;
+background-image:  linear-gradient(#ede7e0 0.5px, transparent 0.5px), linear-gradient(to right, #ede7e0 0.5px, #ffffff 0.5px);
+background-size: 10px 10px; */
+
+background-color: #fdfcfa;
+opacity: 1;
+background-image: radial-gradient(#c6c6c2 0.8px, #fdfcfa 0.8px);
+background-size: 16px 16px;
+/* 
+    background-color: #ffffff;
+    background-image:  linear-gradient(#c2c4e5 0.5px, transparent 0.5px), linear-gradient(to right, #c2c4e5 0.5px, #ffffff 0.5px);
+    background-size: 10px 10px; */
+
+    /* background-size: 20px 20px; */
+    font-size: 12px;
+}
+/*
+=====================================================
+                2. Hero Size
+=====================================================
+*/
+.custom-head-content, .custom-navbar-content,.custom-content{
+max-width: 1100px;
+}
+
+/*
+=====================================================
+                3. Header
+=====================================================
+*/
+
+div.custom-head{
+    background-color: rgb(24, 25, 24);
+    background: url(./images/header-5.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    height: 200px;
+    border-bottom: 2px solid rgb(215, 212, 212);
+    max-width: 1600px;
+    margin: auto;
+}
+.custom-head-content{
+    /* background-color: rgb(139, 181, 248); */
+    min-width: 760px;
+    padding: 23px 0;
+    text-shadow: 5px 5px 5px rgb(255, 255, 255); 
+    /* x,y, blur, color */
+  
+    
+}
+.custom-head-content h1{
+    font-size: 40px;
+    margin-top: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+   
+}
+
+/*
+=====================================================
+                2. Navbar
+=====================================================
+*/
+.custom-navbar{
+
+
+
+    background-color: rgb(247, 248, 244);
+    height: 50px;
+    max-width: 1600px;
+    margin: auto;
+    border-bottom: 2px solid rgb(215, 212, 212);
+}
+.custom-navbar-content{
+    /* background-color: rgb(159, 110, 46); */
+    height: inherit;
+
+  
+}
+
+div.custom-navbar a.navbar-link{
+    font-size: 14px;
+    text-decoration: none;
+    /* background-color: #5FCDFD; */
+    padding: 5px 12px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin-right: 10px;
+    color:black;
+    position: relative;
+    top: 16px;
+
+}
+/* a.navbar-link:active{
+    background-color: #24607A;
+    color:white;
+} */
+div.custom-navbar a.navbar-link:hover{
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #173037, #acc0bb);
+    border-image-slice: 1;
+}
+
+/*
+=====================================================
+                2. Dropdown
+=====================================================
+*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(247, 248, 244);
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 22px;
+    left:0;
+    border-radius: 0 0 10px 10px ;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropdown-content a.dropdown-link{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: black;
+    font-size: 14px;
+  
+  }
+  .dropdown:hover .dropdown-content a.dropdown-link:hover{
+      text-decoration: underline;
+      text-decoration-color: #173037;
+      text-decoration-thickness: 5px;
+
+  }
+  .dropdown:hover .navbar-link{
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #173037, #acc0bb);
+    border-image-slice: 1;
+  }
+
+  /*
+
+=====================================================
+                2. Home
+=====================================================
+*/
+
+div.home-content{
+    max-width: 1100px;
+    /* background-color: #0d6efd; */
+margin: 60px 0 60px 0 ;
+
+border-radius: 5px;
+/* border: 2px solid #CCD0D5; */
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+}
+div.home-col-1{
+    /* background-color: #0d6efd;  */
+    padding: 5px 0;
+display: flex;
+flex-direction: row;
+gap:25px;
+justify-content: center;
+min-width: 1100px;
+
+}
+div.home-col-1>a,div.home-col-1>div{
+    background: rgb(247,241,234);
+    background: radial-gradient(circle, rgba(247,241,234,1) 0%, rgba(244,239,232,1) 68%, rgba(232,229,223,1) 100%);
+width: 350px;
+font-size: 14px;
+text-align: center;
+border: 1px solid rgb(210, 209, 210);
+border-radius: 5px;
+
+
+}
+div.home-col-1>a{
+    text-decoration: none;
+    color:rgb(43, 43, 43);
+}
+div.home-col-1>a:hover{
+    background: #ecdac0;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+}
+div.home-col-1>div p{
+    line-height: normal;
+    padding-top: 10px;
+}
+div.home-col-1 p.prompt-val{
+    font-size: 36px;
+    padding-top: 0;
+}
+
+
+div.home-col-2{
+/* background-color: #0d6efd;   */
+display: flex;
+flex-direction: row;
+gap:25px;
+justify-content: center;
+padding: 5px 0;
+min-width: 1100px;
+}
+div.home-col-2>div{
+    background: rgb(247,241,234);
+    background: radial-gradient(circle, rgba(247,241,234,1) 0%, rgba(244,239,232,1) 68%, rgba(232,229,223,1) 100%);
+    border: 1px solid #c1c2c5;
+    padding: 10px;
+
+}
+div.home-reminder{
+    min-width: 726px;
+}
+div.home-calendar{
+    width: 350px;
+}
+div.home-col-1>div,div.home-col-2>div{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgb(46 45 45 / 20%);
+}
+div.reminder-line{
+    background: rgb(23,48,55);
+background: linear-gradient(90deg, rgba(23,48,55,1) 0%, rgba(172,192,187,1) 100%);
+    height: 5px;
+    width: 200px;
+}
+
+div.reminder-input{
+
+text-align: right;
+margin:30px 0;
+padding: 0 30px;
+}
+div.reminder-input input[type=text],div.reminder-input textarea{
+    outline: none;
+    width: 638px;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+  
+}
+div.reminder-input input.rem-title{
+    border: 1px solid gray;
+    border-radius: 5px 5px 0 0 ;
+}
+div.reminder-input textarea.rem-body{
+    border-radius: 0 0 5px 5px  ;
+    border: 1px solid gray;
+    min-height: 200px;
+    resize: none;
+}
+div.reminder-input button.rem-submit{
+    /* margin-top: 10px;
+    border: 3px solid #25494d;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 20px;
+    background-color: #25494d;
+    color:white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    font-size: 14px;
+    color:white;
+    margin-top: 30px;
+    margin-left:100px;
+    min-width:150px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #25494d;
+    
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+
+}
+div.reminder-input button.rem-submit:hover{
+    font-size: 14px;
+    color:white;
+    margin-top: 30px;
+    margin-left:100px;
+    min-width:150px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #39787d;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+
+div.home-calendar a.delete{
+    /* margin-top: 10px;
+    border: 3px solid #25494d;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 20px;
+    background-color: #25494d;
+    color:white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    font-size: 14px;
+    color:white;
+    margin-top: 30px;
+    
+    min-width:100px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #25494d;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+div.home-calendar a.delete:hover{
+    font-size: 14px;
+    color:white;
+    margin-top: 30px;
+    min-width:100px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #39787d;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+div.line-sep{
+
+    height: 3px;
+    width: 100%;
+   background: rgb(23,48,55);
+background: linear-gradient(90deg, rgba(23,48,55,1) 0%, rgba(172,192,187,1) 100%);
+}
+/*
+=====================================================
+                2. Display Content
+=====================================================
+*/
+div.rem-disp{
+    margin: 30px 0;
+    
+}
+div.rem-disp>div{
+    width: 638px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+div.rem-disp>div:hover{
+    width: 638px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d6f2eb;
+    box-shadow: 0px 1px 3px 0px #41828a;
+}
+
+
+/*
+=====================================================
+                2. content
+=====================================================
+*/
+
+.custom-content{
+    /* background-color: #DADDE1;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #c6c6c2 4px ), repeating-linear-gradient( #f0f0f055, #f0f0f0 ); */
+
+    /* background-color: #fdfcfa;
+opacity: 1;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fdfcfa 40px ), repeating-linear-gradient( #c6c6c255, #c6c6c2 ); */
+
+/* background-color: #fdfcfa;
+opacity: 1;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fdfcfa 7px ), repeating-linear-gradient( #c6c6c255, #c6c6c2 ); */
+
+background: rgb(212,212,209);
+background: linear-gradient(0deg, rgba(212,212,209,1) 0%, rgba(247,241,234,1) 100%);
+
+margin: 60px 0 60px 0 ;
+box-shadow: 0px 0px 10px 1px rgb(46 45 45 / 20%);
+border-radius: 5px;
+border: 2px solid #CCD0D5;
+}
+.form-title{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.custom-form-container{
+    max-width: 1000px;
+    /* background-color: #d3bfe2; */
+}
+.line{
+    height: 5px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.field-title{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+}
+
+.custom-form{
+    padding: 40px 0;
+}
+
+.form-fields{
+    /* background-color: rgb(227, 234, 211); */
+    max-width: 800px;
+    margin-top: 0;
+}
+
+.form-fields input[type=text] {
+    padding: 5px 10px;
+    min-width: 250px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+.form-fields input[type=text]:focus{
+    border: 3px solid rgb(123, 167, 221);
+}
+
+
+
+
+
+
+.form-fields input[type=number] {
+    padding: 5px 10px;
+    min-width: 250px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+div.form-fields select.select {
+    padding: 2px 10px;
+    min-width: 250px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+div.form-fields select.select:focus {
+    border: 3px solid rgb(123, 167, 221);
+}
+
+
+
+
+
+
+
+.form-fields input[type=number]:focus{
+    border: 3px solid rgb(123, 167, 221);
+}
+/* .form-fields input[type=search] {
+    padding: 5px 10px;
+    min-width: 250px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 25px;
+} */
+
+.fields-col-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    gap:25px;
+}
+.fields-col-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    gap:25px;
+}
+
+.fields-col-1{
+    display: flex;
+    justify-content: start;
+
+
+}
+.fields-col-3,.fields-col-2,.fields-col-1,.fields-double{
+    margin-bottom: 20px;
+}
+
+.fields-double{
+    align-items: flex-end;
+}
+.double-name{
+    font-family: 'Prompt', sans-serif;
+    font-size: 14px;
+}
+.custom-radio{
+    min-width: 250px;
+    font-size: 16px;
+
+}
+.radio-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 16px;
+}
+.form-fields .fields-col-1 .field-address{
+    min-width: 800px;
+}
+
+/*
+=====================================================
+                2. search Courses
+=====================================================
+*/
+.search-btn{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 2px;
+}
+
+/*
+=====================================================
+                2. Course List
+=====================================================
+*/
+table.course-list{
+    background-color: #f3f3f3;
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    font-size: 12px;
+    padding: 20px 0px;
+}
+
+table.course-list td{
+    height: 20px;
+}
+
+.course-nbr{
+    min-width: 150px;
+    background-color: #cfbbbb;
+    border: 1px solid;
+}
+.course-title{
+    min-width: 400px;
+    background-color: #cfbbbb;
+    border: 1px solid;
+}
+.course-icon{
+    min-width: 50px;
+}
+.round-edge{
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    font-family: 'Noto Sans', sans-serif;
+}
+button.course{
+    color: aliceblue;
+    background-color: #d53a2c;
+    width:100%;
+    border: 3px solid transparent ;
+    
+
+}
+button.course:hover{
+    background-color: transparent;
+    border: 3px solid #d53a2c ;
+    color: rgb(59, 61, 62);
+
+}
+div.custom-content button.add{
+    font-size: 14px;
+    color:white;
+    margin-top: 30px;
+    margin-left:100px;
+    min-width:150px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #2a4a4d;
+}
+div.custom-content button.add:hover{
+    font-size: 14px;
+    color:white;
+    margin-top: 30px;
+    margin-left:100px;
+    min-width:150px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #39787d;
+    
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+
+/*
+=====================================================
+                2. New Course
+=====================================================
+*/
+
+.class-col-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 16px;
+    gap:30px;
+}
+
+.class-col-2 input[type=text] {
+    padding: 5px 10px;
+    min-width: 387px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+div.class-col-2 select{
+    padding: 2px 10px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    min-width: 387px;
+}
+
+
+/* div.form-fields  select.newClass {
+ 
+    min-width: 300px;
+
+}
+div.form-fields select.newClass:focus {
+    border: 3px solid rgb(123, 167, 221);
+} */
+
+
+/*
+=====================================================
+                2. New Requirement
+=====================================================
+*/
+div.add-req{
+    max-width: 800px;
+    /* background-color: #000000; */
+
+}
+div.req-con{
+
+    max-width: 720px;
+    min-width: 720px;
+    padding:20px;
+    /* border: 3px solid #f1f4f8; */
+    background-color: #173037;
+}
+div.req-flex{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+div.req-flex input[type=text]{
+    padding: 10px 10px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    font-size: 16px;
+    outline: none;
+    border: 2px solid rgb(165, 163, 163);
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+div.add-req input.add-req{
+    min-width: 391px;
+}
+div.add-req input.add-per{
+    max-width: 140px;
+}
+div.add-req input.req-btn{
+    min-width: 80px;
+    background-color: #0d6efd;
+    color: rgb(247, 243, 243);
+    height: 28px;
+    font-size: 16px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+}
+div.add-req input.req-btn:hover{
+    min-width: 85px;
+    background-color: #eff1f5;
+    color: rgb(42, 40, 40);
+    height: 28px;
+    font-size: 16px;
+    border: 3px solid #0d6efd;
+
+}
+div.req-flex  input[type=text]:focus{
+    border: 3px solid rgb(123, 167, 221);
+}
+
+
+/*
+=====================================================
+                2. REQUIREMENT TABLE
+=====================================================
+*/
+
+table.class-req {
+    background-color: #f3f3f3;
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 30px 10px;
+    font-size: 12px;
+    padding: 20px 0px;
+}
+
+table.class-req td{
+    height: 20px;
+}
+
+.requirement{
+    min-width: 496px;
+    background-color: #cfbbbb;
+    border: 1px solid;
+}
+.percent{
+    min-width: 156;
+    background-color: #cfbbbb;
+    border: 1px solid;
+}
+.course-icon{
+    min-width: 50px;
+}
+
+
+/*
+
+=====================================================
+                2. Wilson styles
+=====================================================
+*/
+div.table-display table{
+    border-collapse: separate;
+    border: 1px solid gray;
+    max-width: 1100px;
+    padding: 20px 10px;
+    border-spacing: 15px;
+}
+div.table-display .table-header{
+    font-family: 'Lato', sans-serif;
+    /* background-color: #cf99fb; */
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid gray;
+}
+div.table-display .table-header td{
+    font-family: 'Lato', sans-serif;
+    /* background-color: #cf99fb; */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid gray;
+}
+/* div.table-display .table-display td{
+    border: 2px solid;
+    padding: 10px;
+    border-collapse: collapse;
+} */
+div.table-display .table-fields{
+    background-color: antiquewhite;
+    max-width: 1000px;
+    margin-top: 0;
+}
+/* div.table-display .table-content{
+
+} */
+div.table-display{
+    text-align: center;
+   
+}
+div.table-display .table-content td{
+    font-family: 'Lato', sans-serif;
+font-size: 14px;
+text-align: center;
+background-color: #f3f3f3;
+}
+div.table-display .table-content td.title,div.table-display .table-content td.desc{
+    min-width: 200px;
+}
+div.table-display td.mini-table{
+            font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+
+/*
+
+=====================================================
+                2. StudentList
+=====================================================
+*/
+
+.table-header span.fullname{
+font-size: 12px;
+font-weight: 300;
+}
+
+/*
+
+=====================================================
+                 Login Form
+=====================================================
+*/
+.login-con{
+    background: rgb(212,212,209);
+    background: linear-gradient(0deg, rgba(212,212,209,1) 0%, rgba(247,241,234,1) 100%);
+    
+    margin: 100px 0 60px 0 ;
+    /* min-height: 500px; */
+    box-shadow: 0px 0px 10px 1px #2e2d2dea;
+    border-radius: 5px;
+    border: 1px solid #CCD0D5;
+    max-width: 800px;
+    text-align: center;
+    font-size:16px;
+
+}
+/* div.log-form-con{
+    margin-top:100px;
+} */
+
+div.login-l{
+    min-width: 50%;
+    height: max-content;
+    background-color: blue;
+    min-height: 500px;
+    background: url(./images/login-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+ 
+}
+div.login-r{
+    min-width: 50%;
+    /* padding: 0 20; */
+    min-height: 500px;
+    background: rgb(23,48,55);
+    background: linear-gradient(0deg, rgba(23,48,55,1) 0%, rgba(172,192,187,1) 100%);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding:180px 20px;
+  
+}
+div.log-field{
+  margin-bottom: 15px;
+    
+}
+
+
+/*
+
+=====================================================
+                CLass Information
+=====================================================
+*/
+div.form-fields div.class-details{
+    font-size: 15px;
+    color:rgb(36, 35, 35);
+    text-align: left;
+    /* border:1px solid black; */
+
+}
+div.form-fields div.class-details-h{
+    font-size: 15px;
+    /* color:rgb(23, 22, 22); */
+    color:rgb(36, 35, 35);
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+
+
+}
+div.form-fields div.class-details-td{
+    font-size: 15px;
+    /* color:rgb(23, 22, 22); */
+    color:rgb(36, 35, 35);
+    text-align: left;
+font-size: 12px;
+
+
+}
+div.form-fields div.class-tb-h{
+   border-bottom: 2px solid black;
+
+
+}
+div.form-fields div.class-tb-td{
+    border-bottom: 2px solid black;
+    padding: 4px 0;
+     
+ }
+ div.form-fields div.class-tb-td:hover{
+  background-color: #acc0bb;
+ }
+a.dl-pdf{
+
+
+    border-radius: 5px;
+    font-size: 14px;
+    padding:6px;
+    background-color: #206067;
+    color:white;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+a.dl-pdf:hover{
+    background-color: #2a4a4d;
+    color:white;
+    /* color:rgb(69, 67, 67); */
+    box-shadow: 0px 0px 8px 0px #25494d;
+
+}
+a.class-a{
+
+
+    border-radius: 5px;
+    font-size: 12px;
+    padding:4px;
+    background-color: #206067;
+    color:white;
+    text-decoration: none;
+}
+a.class-a:hover{
+    background-color: #2a4a4d;
+    color:white;
+    /* color:rgb(69, 67, 67); */
+
+}
+button.col-t{
+
+
+    border-radius: 5px;
+    font-size: 15px;
+    padding:7px;
+    background-color: #206067;
+    color:white;
+    text-decoration: none;
+}
+button.col-t:hover{
+    background-color: #2a4a4d;
+    color:white;
+    /* color:rgb(69, 67, 67); */
+
+}
+input.col-t{
+
+
+    border-radius: 5px;
+    font-size: 12px;
+    padding:5px;
+    background-color: #206067;
+    color:white;
+    min-width:70px;
+    text-decoration: none;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+input.col-t:hover{
+    background-color: #0a8995;
+    color:white;
+    /* color:rgb(69, 67, 67); */
+
+}
+/*
+
+=====================================================
+                2. Media Queries
+=====================================================
+*/
+
+/* @media only screen and (max-width: 576px) {
+    .custom-content{
+        width: 100%;
+    }
+    .fields-col-3{
+        flex-direction: column;
+        justify-content: space-around;
+        gap:10px;
+    }
+    .form-fields input[type=text] {
+        padding: 5px 10px;
+        height: 28px;
+        width:80%;
+        box-sizing: border-box;
+        border: 2px solid rgb(165, 163, 163);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+  } */
+button.login-btn:hover{
+    background: radial-gradient(circle, rgba(247,241,234,1) 0%, #f4efe8 68%, rgba(232,229,223,1) 100%);
+}
+/* button.login-btn{
+    background: rgb(24,21,73);
+    background: linear-gradient(0deg, rgba(24,21,73,1) 0%, rgba(187,201,205,1) 100%);
+    color:white;
+} */

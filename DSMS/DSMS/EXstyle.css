@@ -1,0 +1,502 @@
+/*
+Project Name: Digital Student Database
+Version: 1.0
+
+Content:
+1: Header
+2: Navbar
+
+
+font-family
+
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Serif Pro', serif;
+
+*/
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+.custom-body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(247, 243, 243);
+    font-size: 12px;
+}
+/*
+=====================================================
+                1. Hero Size
+=====================================================
+*/
+.custom-head-content, .custom-navbar-content,.custom-content{
+max-width: 1100px;
+}
+
+/*
+=====================================================
+                1. Header
+=====================================================
+*/
+
+.custom-head{
+    /* background-color: aquamarine; */
+    height: 130px;
+}
+.custom-head-content{
+    background-color: rgb(139, 181, 248);
+    min-width: 760px;
+    padding: 23px 0;
+    
+}
+.custom-head-content h1{
+    font-size: 30px;
+}
+
+/*
+=====================================================
+                2. Navbar
+=====================================================
+*/
+.custom-navbar{
+    /* background-color: antiquewhite; */
+    height: 50px;
+}
+.custom-navbar-content{
+    background-color: rgb(159, 110, 46);
+    height: inherit;
+    border-bottom: 2px solid black;
+}
+
+div.custom-navbar a.navbar-link{
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #5FCDFD;
+    padding: 10px 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 1px;
+    color:black;
+    position: relative;
+    top: 16px;
+}
+a.navbar-link:active{
+    background-color: #24607A;
+    color:white;
+}
+div.custom-navbar a.navbar-link:hover{
+    background-color: #B5DFF1;
+}
+
+/*
+=====================================================
+                2. Dropdown
+=====================================================
+*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #B5DFF1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 13px;
+    right:0px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropdown-content a.dropdown-link{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: black;
+  }
+  .dropdown:hover .dropdown-content a.dropdown-link:hover{
+    background-color: #24607A;
+    color: rgb(241, 239, 239);
+  }
+  .dropdown:hover .navbar-link{
+    background-color: #B5DFF1;
+  }
+
+/*
+=====================================================
+                2. content
+=====================================================
+*/
+
+.custom-content{
+background-color: #a1b9f8;
+margin: 60px 0 60px 0 ;
+box-shadow: 0px 0px 10px 5px rgb(46 45 45 / 20%);
+border-radius: 10px;
+}
+.form-title{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.custom-form-container{
+    max-width: 1000px;
+    /* background-color: #d3bfe2; */
+}
+.line{
+    height: 5px;
+    width: 100%;
+    background-color: #000000;
+}
+.field-title{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.custom-form{
+    padding: 20px 0;
+}
+
+.form-fields{
+    /* background-color: rgb(227, 234, 211); */
+    max-width: 800px;
+    margin-top: 0;
+}
+
+.form-fields input[type=text] {
+    padding: 5px 10px;
+    min-width: 250px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+.form-fields input[type=text]:focus{
+    border: 3px solid rgb(123, 167, 221);
+}
+.form-fields input[type=number] {
+    padding: 5px 10px;
+    min-width: 250px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+.form-fields input[type=number]:focus{
+    border: 3px solid rgb(123, 167, 221);
+}
+/* .form-fields input[type=search] {
+    padding: 5px 10px;
+    min-width: 250px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 25px;
+} */
+
+.fields-col-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    gap:25px;
+}
+.fields-col-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    gap:25px;
+}
+
+.fields-col-1{
+    display: flex;
+    justify-content: start;
+
+
+}
+.fields-col-3,.fields-col-2,.fields-col-1,.fields-double{
+    margin-bottom: 20px;
+}
+
+.fields-double{
+    align-items: flex-end;
+}
+.double-name{
+    font-family: 'Prompt', sans-serif;
+    font-size: 14px;
+}
+.custom-radio{
+    min-width: 250px;
+    font-size: 16px;
+
+}
+.radio-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 16px;
+}
+.form-fields .fields-col-1 .field-address{
+    min-width: 800px;
+}
+
+/*
+=====================================================
+                2. search Courses
+=====================================================
+*/
+.search-btn{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 2px;
+}
+
+/*
+=====================================================
+                2. Course List
+=====================================================
+*/
+table.course-list{
+    background-color: #f3f3f3;
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    font-size: 12px;
+    padding: 20px 0px;
+}
+
+table.course-list td{
+    height: 20px;
+}
+
+.course-nbr{
+    min-width: 150px;
+    background-color: #cfbbbb;
+    border: 1px solid;
+}
+.course-title{
+    min-width: 400px;
+    background-color: #cfbbbb;
+    border: 1px solid;
+}
+.course-icon{
+    min-width: 50px;
+}
+.round-edge{
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    font-family: 'Noto Sans', sans-serif;
+}
+button.course{
+    color: aliceblue;
+    background-color: #d53a2c;
+    width:100%;
+    border: 3px solid transparent ;
+    
+
+}
+button.course:hover{
+    background-color: transparent;
+    border: 3px solid #d53a2c ;
+    color: rgb(59, 61, 62);
+
+}
+button.add{
+    font-size: 16px;
+    margin-top: 60px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*
+=====================================================
+                2. New Course
+=====================================================
+*/
+
+.class-col-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 16px;
+    gap:30px;
+}
+
+.class-col-2 input[type=text] {
+    padding: 5px 10px;
+    min-width: 387px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+/*
+=====================================================
+                2. New Requirement
+=====================================================
+*/
+div.add-req{
+    max-width: 800px;
+    /* background-color: #000000; */
+
+}
+div.req-con{
+
+    max-width: 700px;
+    min-width: 700px;
+    padding:10px;
+    border: 3px solid #f1f4f8;
+}
+div.req-flex{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+div.req-flex input[type=text]{
+    padding: 5px 10px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 2px solid rgb(165, 163, 163);
+    font-size: 16px;
+    outline: none;
+    border: 2px solid rgb(165, 163, 163);
+}
+
+div.add-req input.add-req{
+    min-width: 391px;
+}
+div.add-req input.add-per{
+    max-width: 140px;
+}
+div.add-req input.req-btn{
+    min-width: 80px;
+    background-color: #0d6efd;
+    color: rgb(247, 243, 243);
+    height: 28px;
+    font-size: 16px;
+    border: 3px solid transparent;
+}
+div.add-req input.req-btn:hover{
+    min-width: 85px;
+    background-color: #eff1f5;
+    color: rgb(42, 40, 40);
+    height: 28px;
+    font-size: 16px;
+    border: 3px solid #0d6efd;
+
+}
+div.req-flex  input[type=text]:focus{
+    border: 3px solid rgb(123, 167, 221);
+}
+
+
+/*
+=====================================================
+                2. REQUIREMENT TABLE
+=====================================================
+*/
+
+table.class-req {
+    background-color: #f3f3f3;
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 30px 10px;
+    font-size: 12px;
+    padding: 20px 0px;
+}
+
+table.class-req td{
+    height: 20px;
+}
+
+.requirement{
+    min-width: 496px;
+    background-color: #cfbbbb;
+    border: 1px solid;
+}
+.percent{
+    min-width: 156;
+    background-color: #cfbbbb;
+    border: 1px solid;
+}
+.course-icon{
+    min-width: 50px;
+}
+
+/*
+
+=====================================================
+                2. Wilson styles
+=====================================================
+*/
+
+.table-header{
+    font-family: 'Lato', sans-serif;
+    background-color: #cf99fb;
+    font-size: 20px;
+    font-weight: bold;
+}
+.table-display td{
+    border: 2px solid;
+    padding: 5px;
+    border-collapse: collapse;
+}
+.table-fields{
+    background-color: antiquewhite;
+    max-width: 1000px;
+    margin-top: 0;
+}
+.table-content{
+        font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.mini-table{
+            font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+
+
+
+/*
+
+=====================================================
+                2. Media Queries
+=====================================================
+*/
+
+/* @media only screen and (max-width: 576px) {
+    .custom-content{
+        width: 100%;
+    }
+    .fields-col-3{
+        flex-direction: column;
+        justify-content: space-around;
+        gap:10px;
+    }
+    .form-fields input[type=text] {
+        padding: 5px 10px;
+        height: 28px;
+        width:80%;
+        box-sizing: border-box;
+        border: 2px solid rgb(165, 163, 163);
+        border-radius: 4px;
+        font-size: 16px;
+    }
+  } */
